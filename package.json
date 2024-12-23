@@ -1,11 +1,11 @@
 {
   "name": "prod-backend",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/server.js",
   "scripts": {
     "dist": "npx tsc",
-    "dev": "nodemon src/index.ts",
-    "start": "node dist/index.js",
+    "dev": "nodemon src/server.ts",
+    "start": "node dist/server.js",
     "prepare": "husky",
     "test": "node test.js"
   },
@@ -19,6 +19,8 @@
     "nodemon": "^3.1.9"
   },
   "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.7.2"
   }
