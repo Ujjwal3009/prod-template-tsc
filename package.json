@@ -8,14 +8,13 @@
     "start": "node dist/server.js",
     "prepare": "husky",
     "test": "node test.js",
-    "lint" : "eslint .",
+    "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
   "author": "",
   "lint-staged": {
     "*.ts": [
-    " npm run lint:fix"
-     
+      " npm run lint:fix"
     ]
   },
   "license": "ISC",
